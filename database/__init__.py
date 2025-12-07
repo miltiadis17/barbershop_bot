@@ -1,7 +1,7 @@
 """
 Database module
 """
-from .connection import init_db, get_connection
+from .connection import init_db, get_connection, close_all_connections
 from .models import (
     create_service,
     get_all_services,
@@ -16,6 +16,7 @@ from .models import (
 __all__ = [
     'init_db',
     'get_connection',
+    'close_all_connections',
     'create_service',
     'get_all_services',
     'create_booking',

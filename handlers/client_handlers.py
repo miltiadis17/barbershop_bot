@@ -174,7 +174,7 @@ async def process_date_selection(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data.startswith("time:"), BookingStates.choosing_time)
 async def process_time_selection(callback: CallbackQuery, state: FSMContext):
     """Обработка выбора времени и создание записи"""
-    booking_time = callback.data.split(":")[1]
+    booking_time = callback.data.split(":", 1)[1]
 
     # Получаем все данные
     data = await state.get_data()

@@ -18,7 +18,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD", "postgres")
 
 # Список админов (Telegram user_id)
 ADMIN_IDS = [
-    123456789,  # Замените на реальные user_id админов
+    208128144,  # Замените на реальные user_id админов
 ]
 
 # Рабочие графики мастеров
